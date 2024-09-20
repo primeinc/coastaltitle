@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicons/android-icon-192x192.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicons/favicon-96x96.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' }, 
         { rel: 'manifest', href: '/favicons/manifest.json' },
         // Fonts and Icons
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' },
@@ -108,6 +108,10 @@ export default defineNuxtConfig({
     },
   },
   devServer: {
-    port: 8001
+    port: 8002
+  },
+  server: {
+    port: 8002, // this sets the port to 8001
+    host: '0.0.0.0' // allows external connections if needed, otherwise leave it localhost
   }
 })

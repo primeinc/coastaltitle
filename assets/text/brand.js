@@ -1,14 +1,14 @@
 const brand = {
   agency: {
-    name: 'Agency',
-    desc: 'Veluxi Agency - Vue Single Landing Page Template',
-    prefix: 'veluxi',
-    footerText: 'Veluxi Theme - All Rights Reserved 2023',
-    logoText: 'Veluxi Agency',
-    projectName: 'Agency Theme',
-    url: 'veluxi.ux-maestro.com/agency',
-    img: '/static/images/agency-logo.png',
-    notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
+    name: "Coastal Title Solutions",
+    desc: "Ride the Title Wave. Coastal Title Solutions is a branch of Title Solutions Agency, providing professional title services with offices in Ft Lauderdale, Miami, and Tampa, focusing on personalized solutions in coastal regions.",
+    prefix: "coastal",
+    footerText: "Coastal Title Solutions - All Rights Reserved",
+    logoText: "Coastal Title Solutions",
+    projectName: "Coastal Title Solutions",
+    url: "coastaltitlellc.com", // Updated URL
+    img: "/static/images/coastal-logo.png", // Update the logo path if necessary
+    notifMsg: "notify-msg",
   },
 };
 

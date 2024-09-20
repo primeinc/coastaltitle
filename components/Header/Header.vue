@@ -41,7 +41,6 @@
                 :src="logo"
                 alt="logo"
               >
-              {{ brand.agency.name }}
             </nuxt-link>
             <span v-if="!invert && loaded">
               <a
@@ -53,7 +52,6 @@
                   :src="logo"
                   alt="logo"
                 >
-                {{ brand.agency.name }}
               </a>
             </span>
           </div>
@@ -168,8 +166,7 @@ export default {
       menuList: [
         createData(navMenu[0], '#' + navMenu[0]),
         createData(navMenu[1], '#' + navMenu[1]),
-        createData(navMenu[2], '#' + navMenu[2]),
-        createData(navMenu[3], '#' + navMenu[3], -40),
+        createData(navMenu[3], '#' + navMenu[2], -40),
       ],
     };
   },

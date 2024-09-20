@@ -280,3 +280,11 @@ $dark-shadow: 0px 1px 10px 1px #404040, 0px 1px 1px 1px #2a2a2a, 0px 2px 8px -1p
     }
   }
 }
+
+.logo {
+  img {
+    max-width: 3333px !important;
+    height: 33px !important;
+    width: unset !important;
+  }
+}
