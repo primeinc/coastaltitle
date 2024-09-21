@@ -11,9 +11,6 @@
             :src="logo"
             alt="logo"
           >
-          <h6 class="text-h6">
-            {{ brand.agency.projectName }}
-          </h6>
         </div>
         <p class="footer-desc pb-2">
           {{ $t('agencyLanding.footer_paragraph') }}
@@ -175,39 +172,33 @@ export default {
       switchLang,
     };
   },
-  data() {
-    return {
-      logo,
-      brand,
-      footers: [
-        {
-          title: 'Company',
-          description: ['Team', 'History', 'Contact us', 'Locations'],
-          link: ['#team', '#history', '#contact-us', '#locations'],
-        },
-        {
-          title: 'Resources',
-          description: [
-            'Resource',
-            'Resource name',
-            'Another resource',
-            'Final resource',
-          ],
-          link: [
-            '#resource',
-            '#resource-name',
-            '#another-resource',
-            '#final-resource',
-          ],
-        },
-        {
-          title: 'Legal',
-          description: ['Privacy policy', 'Terms of use'],
-          link: ['#privacy-policy', '#terms-of-use'],
-        },
-      ],
-    };
-  },
+  data: () => ({
+    logo,
+    brand,
+    footers: [
+      // {
+      //   title: 'Company',
+      //   description: ['Team', 'History', 'Contact us', 'Locations'],
+      //   link: ['#team', '#history', '#contact-us', '#locations'],
+      // },
+      {
+        title: 'Resources',
+        description: [
+          'Net Sheet Calc',
+          'Title Estimator ',
+        ],
+        link: [
+          '#resource',
+          '#resource',
+        ],
+      },
+      {
+        title: 'Legal',
+        description: ['Privacy policy', 'Terms of use'],
+        link: ['#privacy-policy', '#terms-of-use'],
+      },
+    ],
+  }),
   computed: {
     isDesktop() {
       return this.$vuetify.display.mdAndUp;

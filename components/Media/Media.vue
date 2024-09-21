@@ -138,30 +138,7 @@ export default {
         'team',
         'projects',
       ],
-      mediaData: [
-        {
-          idx: 0,
-          bg: imgApi.office[0],
-          title: 'Office Lobby',
-          desc: 'Our welcoming office lobby',
-          size: 'small',
-        },
-        {
-          idx: 1,
-          bg: imgApi.office[1],
-          title: 'Conference Room',
-          desc: 'State-of-the-art conference room',
-          size: 'medium',
-        },
-        {
-          idx: 2,
-          bg: imgApi.office[2],
-          title: 'Team Meeting',
-          desc: 'Our team in action',
-          size: 'big',
-        },
-        // Add more media items as needed
-      ],
+      mediaData: this.getMediaData(),
     };
   },
   computed: {
@@ -195,6 +172,36 @@ export default {
     },
     handleHide() {
       this.visible = false;
+    },
+    getMediaData() {
+      if (!imgApi || !imgApi.office) {
+        console.error('imgApi or imgApi.office is undefined');
+        return [];
+      }
+      return [
+        {
+          idx: 0,
+          bg: imgApi.office[0] || '',
+          title: 'Office Lobby',
+          desc: 'Our welcoming office lobby',
+          size: 'small',
+        },
+        {
+          idx: 1,
+          bg: imgApi.office[1] || '',
+          title: 'Conference Room',
+          desc: 'State-of-the-art conference room',
+          size: 'medium',
+        },
+        {
+          idx: 2,
+          bg: imgApi.office[2] || '',
+          title: 'Team Meeting',
+          desc: 'Our team in action',
+          size: 'big',
+        },
+        // Add more media items as needed
+      ];
     },
   },
 };
