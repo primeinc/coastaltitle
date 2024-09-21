@@ -1,20 +1,4 @@
 <template>
-  <svg
-    fill="cccccc"
-    width="845px"
-    height="1099px"
-    class="background base"
-  >
-    <use xlink:href="/images/decoration/square-deco-primary.svg#square" />
-  </svg>
-  <svg
-    fill="cccccc"
-    width="845px"
-    height="1099px"
-    class="background front"
-  >
-    <use xlink:href="/images/decoration/square-deco-primary.svg#square" />
-  </svg>
   <v-container :class="{ 'fixed-width': mdUp }">
     <div class="root">
       <v-card class="paper">

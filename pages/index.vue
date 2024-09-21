@@ -18,12 +18,10 @@
       <section id="testimonials" :class="[isMobile ? 'space-top-short' : 'space-top']">
         <testimonials />
       </section>
-      <section id="case-studies" :class="[isMobile ? 'space-top-short' : 'space-top']">
+      <section id="case-studies">
+        >>
         <case-studies />
       </section>
-      <!-- <section id="media">
-        <media />
-      </section> -->
       <section id="call-to-action" class="space-top-short">
         <call-action />
       </section>
