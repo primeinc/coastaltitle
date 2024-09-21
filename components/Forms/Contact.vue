@@ -145,14 +145,14 @@ import { useLocalePath } from '#imports';
 import Hidden from '../Hidden';
 
 export default {
+  components: {
+    Hidden,
+  },
   setup() {
     const localePath = useLocalePath();
     return {
       localePath,
     };
-  },
-  components: {
-    Hidden,
   },
   data() {
     return {

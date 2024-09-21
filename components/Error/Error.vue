@@ -42,12 +42,6 @@
 <script>
 import { useLocalePath } from '#imports';
 export default {
-  setup() {
-    const localePath = useLocalePath();
-    return {
-      localePath,
-    };
-  },
   props: {
     errCode: {
       type: String,
@@ -57,6 +51,12 @@ export default {
       type: String,
       default: '',
     },
+  },
+  setup() {
+    const localePath = useLocalePath();
+    return {
+      localePath,
+    };
   },
 };
 </script>

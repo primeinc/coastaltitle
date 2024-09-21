@@ -5,29 +5,17 @@
       <section id="home">
         <video-banner />
       </section>
-      <section
-        id="about"
-        :class="[isTablet ? 'space-top-short' : 'space-top']"
-      >
+      <section id="about" :class="[isTablet ? 'space-top-short' : 'space-top']">
         <about />
       </section>
       <dots-parallax />
-      <section
-        id="services"
-        class="space-top"
-      >
+      <section id="services" class="space-top">
         <services />
       </section>
-      <section
-        id="our-expertise"
-        :class="[isTablet ? 'space-top-short' : 'space-top']"
-      >
+      <section id="our-expertise" :class="[isTablet ? 'space-top-short' : 'space-top']">
         <expertise />
       </section>
-      <section
-        id="testimonials"
-        :class="[isMobile ? 'space-top-short' : 'space-top']"
-      >
+      <section id="testimonials" :class="[isMobile ? 'space-top-short' : 'space-top']">
         <testimonials />
       </section>
       <section id="case-studies">
@@ -50,33 +38,33 @@
 </template>
 
 <style scoped lang="scss">
-@function section-margin($margin) {
-  @return $margin * 20;
-}
-.space-top {
-  margin-top: section-margin($spacing1);
-  @include breakpoints-down(md) {
-    margin-top: section-margin(6px);
+  @function section-margin($margin) {
+    @return $margin * 20;
   }
-  @include breakpoints-down(xs) {
+  .space-top {
+    margin-top: section-margin($spacing1);
+    @include breakpoints-down(md) {
+      margin-top: section-margin(6px);
+    }
+    @include breakpoints-down(xs) {
+      margin-top: section-margin($spacing1 * 0.5);
+    }
+  }
+  .space-bottom-short {
+    margin-bottom: section-margin($spacing1 * 0.5);
+  }
+  .space-top-short {
     margin-top: section-margin($spacing1 * 0.5);
   }
-}
-.space-bottom-short {
-  margin-bottom: section-margin($spacing1 * 0.5);
-}
-.space-top-short {
-  margin-top: section-margin($spacing1 * 0.5);
-}
-.container-wrap {
-  overflow: hidden;
-  @include breakpoints-up(md) {
-    padding-top: $spacing6;
+  .container-wrap {
+    overflow: hidden;
+    @include breakpoints-up(md) {
+      padding-top: $spacing6;
+    }
+    section {
+      position: relative;
+    }
   }
-  section {
-    position: relative;
-  }
-}
 </style>
 
 <script>

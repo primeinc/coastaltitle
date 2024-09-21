@@ -150,7 +150,7 @@ export default {
 
     return {
       scrollToMyEl,
-      localePath
+      localePath,
     };
   },
   data() {

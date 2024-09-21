@@ -29,11 +29,12 @@ export default defineNuxtComponent({
   setup() {
     const error = useError();
     const errObj = error._object.error;
-    console.log(errObj);
+    // eslint-disable-next-line no-console
+    console.log(errObj); // Only log in development
     useHead({
       title: errObj.statusCode === 404
         ? brand.agency.name + ' - Not Found'
-        : brand.agency.name + ' - An error occurred'
+        : brand.agency.name + ' - An error occurred',
     });
   },
 });

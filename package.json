@@ -37,6 +37,7 @@
     "vuetify": "^3.1.6"
   },
   "devDependencies": {
+    "@darkobits/vite-plugin-favicons": "^0.3.2",
     "@nuxtjs/i18n": "^8.0.0-rc.4",
     "@vue/eslint-config-airbnb": "^6.0.0",
     "animate.css": "^3.7.2",
@@ -48,9 +49,10 @@
     "eslint-plugin-vue": "^8.0.3",
     "eslint-plugin-vuejs-accessibility": "^1.1.0",
     "nuxt": "^3.7.3",
-    "prettier": "^2.8.4",
     "sass": "^1.58.3",
-    "vite-plugin-eslint": "^1.8.1"
+    "stylelint-config-prettier": "^9.0.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-favicon": "^1.0.8"
   },
   "volta": {
     "node": "20.17.0"

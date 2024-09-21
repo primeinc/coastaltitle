@@ -1,6 +1,6 @@
 <template>
   <div class="main-wrap">
-    <main-header :invert="invert"/>
+    <main-header :invert="invert" />
     <div class="container-wrap" :class="{ 'scroll-nav-content' : navScroll }">
       <slot />
     </div>
@@ -38,10 +38,11 @@
 </style>
 
 <script setup>
+import { toRefs } from 'vue';
 import MainHeader from '@/components/Header';
 import MainFooter from '@/components/Footer';
 
-const { invert, navScroll } = defineProps({
+const props = defineProps({
   invert: {
     type: Boolean,
     default: false,
@@ -49,6 +50,8 @@ const { invert, navScroll } = defineProps({
   navScroll: {
     type: Boolean,
     default: false,
-  }
+  },
 });
+
+const { invert, navScroll } = toRefs(props);
 </script>

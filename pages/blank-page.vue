@@ -16,22 +16,22 @@
 </template>
 
 <style scoped lang="scss">
-@function section-margin($margin) {
-  @return $margin * 20;
-}
-.space-bottom {
-  margin-bottom: section-margin($spacing1);
-}
-.space-top {
-  margin-top: section-margin($spacing1);
-}
-.container-wrap {
-  margin-top: $spacing10;
-  padding: $spacing4;
-  > section {
-    position: relative;
+  @function section-margin($margin) {
+    @return $margin * 20;
   }
-}
+  .space-bottom {
+    margin-bottom: section-margin($spacing1);
+  }
+  .space-top {
+    margin-top: section-margin($spacing1);
+  }
+  .container-wrap {
+    margin-top: $spacing10;
+    padding: $spacing4;
+    > section {
+      position: relative;
+    }
+  }
 </style>
 
 <script>
