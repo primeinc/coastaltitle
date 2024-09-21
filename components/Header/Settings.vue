@@ -74,8 +74,7 @@
 
 <script>
 import { ref, onMounted } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useSwitchLocalePath } from 'vue-i18n-routing';
+import { useRoute, useRouter } from 'vue-router'; // To handle locale-based routing
 import { toggleDark, setRtl } from '@/composables/uiTheme';
 
 export default {
@@ -86,34 +85,40 @@ export default {
     },
   },
   setup() {
-    const isDark = ref(false);
-    const i18n = useI18n();
-    const isLoaded = ref(false);
-    const curLang = i18n.locale.value;
+    const route = useRoute();
+    const router = useRouter();
 
-    const switchLocalePath = useSwitchLocalePath();
+    const isDark = ref(false);
+    const isLoaded = ref(false);
+    const curLang = ref(route.params.locale || 'en'); // Get locale from route or fallback to 'en'
 
     onMounted(() => {
       isLoaded.value = true;
       isDark.value = localStorage.getItem('luxiDarkMode') === 'dark';
     });
 
+    // Function to toggle dark mode
     function switchDark() {
       isDark.value = !isDark.value;
       toggleDark();
     }
 
-    function switchRtl(locale) {
-      // Set RTL and Document attr
-      document.documentElement.setAttribute('lang', locale);
+    // Function to switch locale and handle RTL/LTR changes
+    function switchRtl(newLocale) {
+      // Update the current language
+      curLang.value = newLocale;
+      document.documentElement.setAttribute('lang', newLocale);
 
-      if (locale === 'ar') {
+      if (newLocale === 'ar') {
         setRtl(true);
         document.documentElement.setAttribute('dir', 'rtl');
       } else {
         setRtl(false);
         document.documentElement.setAttribute('dir', 'ltr');
       }
+
+      // Navigate to the new locale-based path
+      router.push({ path: `/${newLocale}${route.path}` });
     }
 
     return {
@@ -122,13 +127,15 @@ export default {
       curLang,
       switchDark,
       switchRtl,
-      switchLocalePath,
     };
   },
-  data: () => ({
-    open: false,
-  }),
+  data() {
+    return {
+      open: false,
+    };
+  },
   computed: {
+    // Get the list of languages from Nuxt's $i18n
     langList() {
       return this.$i18n.locales;
     },

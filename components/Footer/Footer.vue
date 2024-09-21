@@ -137,92 +137,90 @@
 
 <script>
 import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useSwitchLocalePath } from 'vue-i18n-routing';
+import { useRoute, useRouter } from 'vue-router';
 import { setRtl } from '@/composables/uiTheme';
 import logo from '@/assets/images/agency-logo.svg';
 import brand from '@/assets/text/brand';
-import { navigateTo } from '#app';
 
 export default {
   setup() {
-    const switchLocalePath = useSwitchLocalePath();
+    const route = useRoute();
+    const router = useRouter();
 
-    const i18n = useI18n();
-    const curLang = i18n.locale.value;
-    const lang = ref(curLang);
+    // Access the current locale via the Nuxt $i18n property
+    const lang = ref(route.params.locale || 'en'); // Fallback to 'en' if no locale
 
-    function switchLang(locale) {
-      navigateTo(switchLocalePath(locale));
-      lang.value = locale;
+    // Switch language and handle RTL setting
+    function switchLang(newLocale) {
+      lang.value = newLocale;
 
-      // Set RTL and Document attr
-      document.documentElement.setAttribute('lang', locale);
+      // Update the document attributes for RTL/LTR based on the locale
+      document.documentElement.setAttribute('lang', newLocale);
 
-      if (locale === 'ar') {
+      if (newLocale === 'ar') {
         setRtl(true);
         document.documentElement.setAttribute('dir', 'rtl');
       } else {
         setRtl(false);
         document.documentElement.setAttribute('dir', 'ltr');
       }
+
+      // Navigate to the locale-based path
+      const newPath = `/${newLocale}${route.path}`;
+      router.push(newPath);
     }
 
     return {
-      curLang,
-      switchLang,
       lang,
+      switchLang,
     };
   },
-  data: () => ({
-    logo,
-    brand,
-    footers: [
-      {
-        title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-        link: ['#team', '#history', '#contact-us', '#locations'],
-      },
-      {
-        title: 'Resources',
-        description: [
-          'Resource',
-          'Resource name',
-          'Another resource',
-          'Final resource',
-        ],
-        link: [
-          '#resource',
-          '#resource-name',
-          '#another-resource',
-          '#final-resource',
-        ],
-      },
-      {
-        title: 'Legal',
-        description: ['Privacy policy', 'Terms of use'],
-        link: ['#privacy-policy', '#terms-of-use'],
-      },
-    ],
-  }),
+  data() {
+    return {
+      logo,
+      brand,
+      footers: [
+        {
+          title: 'Company',
+          description: ['Team', 'History', 'Contact us', 'Locations'],
+          link: ['#team', '#history', '#contact-us', '#locations'],
+        },
+        {
+          title: 'Resources',
+          description: [
+            'Resource',
+            'Resource name',
+            'Another resource',
+            'Final resource',
+          ],
+          link: [
+            '#resource',
+            '#resource-name',
+            '#another-resource',
+            '#final-resource',
+          ],
+        },
+        {
+          title: 'Legal',
+          description: ['Privacy policy', 'Terms of use'],
+          link: ['#privacy-policy', '#terms-of-use'],
+        },
+      ],
+    };
+  },
   computed: {
     isDesktop() {
-      const mdUp = this.$vuetify.display.mdAndUp;
-      return mdUp;
+      return this.$vuetify.display.mdAndUp;
     },
     isMobile() {
-      const smDown = this.$vuetify.display.smAndDown;
-      return smDown;
+      return this.$vuetify.display.smAndDown;
     },
     langList() {
-      const list = [];
-      const i18n = this.$i18n.locales;
-
-      i18n.map((locale) => {
-        list.push({ title: this.$t('common.' + locale.code), value: locale.code });
-        return false;
-      });
-      return list;
+      // Access locales from Nuxt's i18n configuration
+      return this.$i18n.locales.map(locale => ({
+        title: this.$t('common.' + locale.code), // Translate locale name
+        value: locale.code, // Use locale code
+      }));
     },
   },
 };
