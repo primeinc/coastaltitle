@@ -175,55 +175,61 @@ export default {
     },
     getMediaData() {
       if (!imgApi || !imgApi.agency) {
+        // eslint-disable-next-line no-console
         console.error('imgApi or imgApi.agency is undefined');
         return [];
       }
       return [
         {
           idx: 0,
-          bg: 'https://via.placeholder.com/150',
+          bg: imgApi.agency[5],
+          logo: '/images/logos/mobile.png',
           title: 'Office Environment',
           desc: 'Our modern office space.',
           size: 'small',
         },
         {
           idx: 1,
+          logo: '/images/logos/coin.png',
           bg: 'https://via.placeholder.com/150',
           title: 'Team Meeting',
           desc: 'Our team collaborating on a project.',
           size: 'small',
+          simple: true,
         },
         {
           idx: 2,
+          logo: '/images/logos/starter.png',
           bg: 'https://via.placeholder.com/300',
           title: 'Company Event',
           desc: 'Celebrating our achievements.',
           size: 'medium',
+          simple: true,
         },
         {
           idx: 3,
-          bg: 'https://via.placeholder.com/300',
+          bg: imgApi.agency[6],
           title: 'Project Planning',
           desc: 'Planning our next big project.',
           size: 'medium',
         },
         {
           idx: 4,
-          bg: 'https://via.placeholder.com/300',
+          bg: imgApi.agency[7],
           title: 'Team Building',
           desc: 'Team building activities.',
           size: 'medium',
         },
         {
           idx: 5,
-          bg: 'https://via.placeholder.com/500',
+          bg: imgApi.agency[8],
           title: 'Office Exterior',
           desc: 'The exterior of our office building.',
           size: 'big',
         },
         {
           idx: 6,
-          bg: 'https://via.placeholder.com/500',
+          bg: imgApi.agency[9],
           title: 'Client Meeting',
           desc: 'Meeting with our valued clients.',
           size: 'big',
