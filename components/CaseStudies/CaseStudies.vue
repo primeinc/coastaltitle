@@ -147,7 +147,7 @@ export default {
       caseData: [
         {
           idx: 0,
-          bg: this.getRandomOfficeImage(), // Use random office image
+          bg: this.getRandomSmallImage(), // Use getRandomSmallImage for small size
           logo: '/images/logos/mobile.png',
           title: 'Modern Office Space',
           desc: 'Our state-of-the-art facilities',
@@ -155,7 +155,7 @@ export default {
         },
         {
           idx: 1,
-          bg: this.getRandomOfficeImage(), // Use random office image
+          bg: this.getRandomSmallImage(), // Use getRandomSmallImage for small size
           logo: '/images/logos/coin.png',
           title: 'Annual Company Picnic',
           desc: 'Team building and fun',
@@ -164,7 +164,7 @@ export default {
         },
         {
           idx: 2,
-          bg: this.getRandomOfficeImage(), // Use random office image
+          bg: this.getRandomOfficeImage(), // Use existing method for medium size
           logo: '/images/logos/starter.png',
           title: 'Meet Our Expert Team',
           desc: 'Dedicated professionals',
@@ -173,7 +173,7 @@ export default {
         },
         {
           idx: 3,
-          bg: this.getRandomOfficeImage(), // Use random office image
+          bg: this.getRandomOfficeImage(), // Use existing method for medium size
           logo: '/images/logos/profile.png',
           title: 'Coastal Property Closing',
           desc: 'Successful beachfront transaction',
@@ -181,7 +181,7 @@ export default {
         },
         {
           idx: 5,
-          bg: this.getRandomOfficeImage(), // Use random office image
+          bg: this.getRandomBigImage(), // Use getRandomBigImage for big size
           logo: '/images/logos/fashion.png',
           title: 'New Branch Opening',
           desc: 'Expanding our reach',
@@ -189,13 +189,16 @@ export default {
         },
         {
           idx: 6,
-          bg: this.getRandomOfficeImage(), // Use random office image
+          bg: this.getRandomBigImage(), // Use getRandomBigImage for big size
           logo: '/images/logos/cloud.png',
           title: 'Title Search Process',
           desc: 'Behind the scenes of our work',
           size: 'big',
         },
       ],
+      lastImageIndex: null, // Existing line
+      lastBigImageIndex: null, // Add this line
+      lastSmallImageIndex: null, // Add this line
     };
   },
   computed: {
@@ -237,8 +240,62 @@ export default {
     },
     getRandomOfficeImage() {
       const images = imgAPI.office;
-      const randomIndex = Math.floor(Math.random() * images.length);
-      return images[randomIndex];
+      const weights = images.map((_, index) => (index === this.lastImageIndex ? 0.5 : 1),
+      );
+
+      const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+      let random = Math.random() * totalWeight;
+
+      let selectedIndex = 0;
+      for (let i = 0; i < weights.length; i += 1) { // Changed 'i++' to 'i += 1'
+        if (random < weights[i]) {
+          selectedIndex = i;
+          break;
+        }
+        random -= weights[i];
+      }
+
+      this.lastImageIndex = selectedIndex;
+      return images[selectedIndex];
+    },
+    getRandomBigImage() {
+      const images = imgAPI.office;
+      const weights = images.map((_, index) => (index === this.lastBigImageIndex ? 0.5 : 1));
+
+      const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+      let random = Math.random() * totalWeight;
+
+      let selectedIndex = 0;
+      for (let i = 0; i < weights.length; i += 1) { // Changed 'i++' to 'i += 1'
+        if (random < weights[i]) {
+          selectedIndex = i;
+          break;
+        }
+        random -= weights[i];
+      }
+
+      this.lastBigImageIndex = selectedIndex;
+      return images[selectedIndex];
+    },
+
+    getRandomSmallImage() {
+      const images = imgAPI.office;
+      const weights = images.map((_, index) => (index === this.lastSmallImageIndex ? 0.5 : 1));
+
+      const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+      let random = Math.random() * totalWeight;
+
+      let selectedIndex = 0;
+      for (let i = 0; i < weights.length; i += 1) { // Changed 'i++' to 'i += 1'
+        if (random < weights[i]) {
+          selectedIndex = i;
+          break;
+        }
+        random -= weights[i];
+      }
+
+      this.lastSmallImageIndex = selectedIndex;
+      return images[selectedIndex];
     },
   },
 };
