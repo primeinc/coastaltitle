@@ -59,5 +59,15 @@
     "office_head_address": "550 N Reo St, Suite 300, Tampa, FL 33609",
     "office_branch": "Oficina Sucursal",
     "footer_paragraph": "En Coastal Title Solutions, nos comprometemos a ofrecer a nuestros clientes soluciones precisas y completas de títulos."
+  },
+  "mediaLanding": {
+    "media_title": "Galería de Medios",
+    "media_subtitle": "Explora nuestra galería de medios que muestra nuestro trabajo y eventos.",
+    "media_categories": {
+      "office": "Oficina",
+      "events": "Eventos",
+      "team": "Equipo",
+      "projects": "Proyectos"
+    }
   }
 }

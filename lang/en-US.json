@@ -64,5 +64,15 @@
     "office_branch": "Branch Office",
     "footer_paragraph": "At Coastal Title Solutions, we're committed to providing our clients with precise, comprehensive title solutions.",
     "media_title": "Media Gallery"
+  },
+  "mediaLanding": {
+    "media_title": "Media Gallery",
+    "media_subtitle": "Explore our media gallery showcasing our work and events.",
+    "media_categories": {
+      "office": "Office",
+      "events": "Events",
+      "team": "Team",
+      "projects": "Projects"
+    }
   }
 }

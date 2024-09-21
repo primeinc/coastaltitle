@@ -30,7 +30,7 @@
                     class="filter"
                     @click="value = item"
                   >
-                    {{ item }}
+                    {{ $t('mediaLanding.media_categories.' + item) }}
                   </v-list-item>
                 </v-list>
               </div>
@@ -174,33 +174,60 @@ export default {
       this.visible = false;
     },
     getMediaData() {
-      if (!imgApi || !imgApi.office) {
-        console.error('imgApi or imgApi.office is undefined');
+      if (!imgApi || !imgApi.agency) {
+        console.error('imgApi or imgApi.agency is undefined');
         return [];
       }
       return [
         {
           idx: 0,
-          bg: imgApi.office[0] || '',
-          title: 'Office Lobby',
-          desc: 'Our welcoming office lobby',
+          bg: 'https://via.placeholder.com/150',
+          title: 'Office Environment',
+          desc: 'Our modern office space.',
           size: 'small',
         },
         {
           idx: 1,
-          bg: imgApi.office[1] || '',
-          title: 'Conference Room',
-          desc: 'State-of-the-art conference room',
-          size: 'medium',
+          bg: 'https://via.placeholder.com/150',
+          title: 'Team Meeting',
+          desc: 'Our team collaborating on a project.',
+          size: 'small',
         },
         {
           idx: 2,
-          bg: imgApi.office[2] || '',
-          title: 'Team Meeting',
-          desc: 'Our team in action',
+          bg: 'https://via.placeholder.com/300',
+          title: 'Company Event',
+          desc: 'Celebrating our achievements.',
+          size: 'medium',
+        },
+        {
+          idx: 3,
+          bg: 'https://via.placeholder.com/300',
+          title: 'Project Planning',
+          desc: 'Planning our next big project.',
+          size: 'medium',
+        },
+        {
+          idx: 4,
+          bg: 'https://via.placeholder.com/300',
+          title: 'Team Building',
+          desc: 'Team building activities.',
+          size: 'medium',
+        },
+        {
+          idx: 5,
+          bg: 'https://via.placeholder.com/500',
+          title: 'Office Exterior',
+          desc: 'The exterior of our office building.',
           size: 'big',
         },
-        // Add more media items as needed
+        {
+          idx: 6,
+          bg: 'https://via.placeholder.com/500',
+          title: 'Client Meeting',
+          desc: 'Meeting with our valued clients.',
+          size: 'big',
+        },
       ];
     },
   },

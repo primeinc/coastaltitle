@@ -1,61 +1,62 @@
 .root {
-  position: relative;
-  z-index: 10;
-  .v-theme--dark & {
-    @include bg-color-darken($palette-primary-light, 0.8);
-  }
-  .v-theme--light & {
-    @include bg-color-lighten($palette-primary-light, 0.8);
-  }
-  .nav {
-    @include breakpoints-down(sm) {
-      max-width: 100%;
-      display: flex;
-      overflow: auto;
+    position: relative;
+    z-index: 10;
+    .v-theme--dark & {
+      @include bg-color-darken($palette-primary-light, 0.8)
+    }
+    .v-theme--light & {
+       @include bg-color-lighten($palette-primary-light, 0.8)
+    }
+    .nav {
+      @include breakpoints-down(sm) {
+        max-width: 100%;
+        display: flex;
+        overflow: auto;
+      }
     }
   }
-}
-
-.side-filter {
-  .nav {
-    background: none;
-    @include breakpoints-down(xs) {
-      padding: spacing(0, 3);
+  
+  .side-filter {
+    .nav {
+      background: none;
+      @include breakpoints-down(xs) {
+        padding: spacing(0, 3)
+      }
     }
-  }
-  .filter {
-    border-radius: $rounded-small;
-    text-transform: capitalize;
-    margin-bottom: $spacing1;
-    padding: spacing(0.5, 2);
-    min-height: 36px;
-    .v-list-item-title {
+    .filter {
+      border-radius: $rounded-small;
       text-transform: capitalize;
+      margin-bottom: $spacing1;
+      padding: spacing(0.5, 2);
+      min-height: 36px;
+      .v-list-item-title {
+        text-transform: capitalize;
+      }
+      &:before {
+        border-radius: 40px;  
+      }
+      @include breakpoints-up(md) {
+        width: 90%;
+      }
+      @include breakpoints-down(sm) {
+        text-align: center
+      }
+      @include breakpoints-up(sm) {
+        overflow: hidden;
+      }
+      @include breakpoints-down(sm) {
+        text-align: center
+      }
     }
-    &:before {
-      border-radius: 40px;  
-    }
-    @include breakpoints-up(md) {
-      width: 90%;
-    }
-    @include breakpoints-down(sm) {
-      text-align: center;
-    }
-    @include breakpoints-up(sm) {
-      overflow: hidden;
-    }
-    @include breakpoints-down(sm) {
-      text-align: center;
+    :deep(.v-list-item--active) {
+      background: $palette-primary-light;
+      color: $palette-primary-dark;
     }
   }
-  :deep(.v-list-item--active) {
-    background: $palette-primary-light;
-    color: $palette-primary-dark;
+  
+  .massonry {
+    button {
+      width: 100%
+    }
   }
-}
-
-.massonry {
-  button {
-    width: 100%;
-  }
-}
+  
