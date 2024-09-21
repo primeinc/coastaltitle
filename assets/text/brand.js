@@ -7,7 +7,7 @@ const brand = {
     logoText: 'Coastal Title Solutions',
     projectName: 'Coastal Title Solutions',
     url: 'coastaltitlellc.com',
-    img: '/static/images/coastal-logo.png',
+    img: '/assets/images/agency-logo.png',
     notifMsg: 'notify-msg',
   },
 };
