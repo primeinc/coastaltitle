@@ -27,7 +27,7 @@
     "header_services": "services",
     "header_our-expertise": "service area",
     "header_testimonials": "testimonials",
-    "header_case-studies": "case studies",
+    "header_case-studies": "media",
     "header_our_office": "our office",
     "header_contact": "contact",
     "header_language": "language",
@@ -52,7 +52,7 @@
     "expertise_subtitle": "A successful transaction requires precision and expertise.",
     "expertise_paragraph": "We offer the resources and expertise to support your real estate transactions. Whether you're buying, selling, or refinancing, we’ve got you covered with our top-notch title services.",
     "testimonial_title": "Client Testimonials",
-    "case_title": "Case Studies",
+    "case_title": "Media",
     "cta_title": "Ready to get started with Coastal Title Solutions?",
     "cta_subtitle": "We’re here to provide you with the title solutions you need.",
     "cta_btn": "contact us",
@@ -63,7 +63,9 @@
     "office_head_address": "550 N Reo St, Suite 300, Tampa, FL 33609",
     "office_branch": "Branch Office",
     "footer_paragraph": "At Coastal Title Solutions, we're committed to providing our clients with precise, comprehensive title solutions.",
-    "media_title": "Media Gallery"
+    "media_title": "Media",
+    "header_titlecapture": "TitleCapture",
+    "titlecapture_url": "https://titlesolutionsllc.titlecapture.com/"
   },
   "mediaLanding": {
     "media_title": "Media Gallery",

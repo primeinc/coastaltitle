@@ -18,9 +18,12 @@
       <section id="testimonials" :class="[isMobile ? 'space-top-short' : 'space-top']">
         <testimonials />
       </section>
-      <section id="media">
-        <media />
+      <section id="case-studies" :class="[isMobile ? 'space-top-short' : 'space-top']">
+        <case-studies />
       </section>
+      <!-- <section id="media">
+        <media />
+      </section> -->
       <section id="call-to-action" class="space-top-short">
         <call-action />
       </section>
@@ -77,8 +80,8 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Expertise from '@/components/Expertise';
 import Testimonials from '@/components/Testimonials';
-// import CaseStudies from '@/components/CaseStudies';
-import Media from '@/components/Media';
+import CaseStudies from '@/components/CaseStudies';
+// import Media from '@/components/Media';
 import CallAction from '@/components/CallAction';
 import MapAddress from '@/components/MapAddress';
 import Hidden from '@/components/Hidden';
@@ -98,7 +101,7 @@ export default defineNuxtComponent({
     Services,
     Expertise,
     Testimonials,
-    Media,
+    CaseStudies,
     CallAction,
     MapAddress,
     PageNav,

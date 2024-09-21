@@ -83,6 +83,16 @@
               </li>
               <li>
                 <v-btn
+                  :href="$t('agencyLanding.titlecapture_url')"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="menu-link"
+                >
+                  {{ $t('agencyLanding.header_titlecapture') }}
+                </v-btn>
+              </li>
+              <li>
+                <v-btn
                   :to="localePath(link.agency.contact)"
                   v-text="$t('agencyLanding.header_contact')"
                 />
@@ -165,7 +175,6 @@ export default {
       openDrawer: null,
       menuList: [
         createData(navMenu[0], '#' + navMenu[0]),
-        createData(navMenu[1], '#' + navMenu[1]),
         createData(navMenu[3], '#' + navMenu[2], -40),
       ],
     };
