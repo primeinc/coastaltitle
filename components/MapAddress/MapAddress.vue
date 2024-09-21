@@ -20,22 +20,28 @@
                 </h6>
                 <v-row>
                   <v-col cols="12" sm="6">
-                    <v-icon class="icon">
-                      mdi-phone
-                    </v-icon>
-                    <span>{{ office.phone }}</span>
+                    <div class="icon-text">
+                      <v-icon class="icon">
+                        mdi-phone
+                      </v-icon>
+                      <a :href="'tel:' + office.phone">{{ formatPhone(office.phone) }}</a> <!-- Made phone clickable -->
+                    </div>
                   </v-col>
-                  <v-col cols="12" sm="6">
-                    <v-icon class="icon">
-                      mdi-email
-                    </v-icon>
-                    <span>{{ office.email }}</span>
+                  <v-col cols="12" sm="6" class="email-col">
+                    <div class="icon-text">
+                      <v-icon class="icon">
+                        mdi-email
+                      </v-icon>
+                      <a :href="'mailto:' + office.email">{{ office.email }}</a> <!-- Made email clickable -->
+                    </div>
                   </v-col>
                   <v-col cols="12" sm="12">
-                    <v-icon class="icon">
-                      mdi-map-marker
-                    </v-icon>
-                    {{ office.address }}
+                    <div class="icon-text">
+                      <v-icon class="icon">
+                        mdi-map-marker
+                      </v-icon>
+                      <a :href="'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(office.address)" target="_blank">{{ office.address }}</a> <!-- Made address clickable -->
+                    </div>
                   </v-col>
                 </v-row>
               </v-card>
@@ -91,27 +97,37 @@ export default {
       {
         name: 'Ft Lauderdale Office',
         phone: '(954) 519-2477',
-        email: 'title@coastaltitlellc.com',
+        email: 'ftlauderdale@coastaltitlellc.com', // Updated email
         address: '333 Las Olas Way #314, Fort Lauderdale, FL 33301',
       },
       {
         name: 'Tampa Office',
-        phone: '813-213-3410',
-        email: 'title@coastaltitlellc.com',
+        phone: '(813) 213-3410',
+        email: 'tampa@coastaltitlellc.com', // Updated email
         address: '550 N Reo St, Suite 300, Tampa, FL 33609',
       },
       {
         name: 'Miami Office',
         phone: '(305) 423-0091',
-        email: 'title@coastaltitlellc.com',
+        email: 'miami@coastaltitlellc.com', // Updated email
         address: '350 S. Miami Ave., Suite A, Miami, FL 33130',
       },
     ];
+
+    const formatPhone = (phone) => {
+      const cleaned = ('' + phone).replace(/\D/g, '');
+      const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+      if (match) {
+        return `(${match[1]}) ${match[2]}-${match[3]}`;
+      }
+      return phone;
+    };
 
     return {
       center,
       locations,
       offices,
+      formatPhone,
     };
   },
   computed: {

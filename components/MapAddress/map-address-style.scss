@@ -23,6 +23,15 @@
   position: relative
 }
 
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.email-col {
+  padding: spacing(1, 0); // Uniform padding for email column
+}
+
 .map {
   background: #dedede;
   overflow: hidden;
