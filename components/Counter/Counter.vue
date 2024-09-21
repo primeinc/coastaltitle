@@ -9,10 +9,10 @@
           <div class="counter-item">
             <div class="text">
               <h3 class="use-text-title">
-                +200
+                🚀
               </h3>
               <p class="use-text-subtitle">
-                {{ $t('agencyLanding.about_employee') }}
+                {{ $t('agencyLanding.about_turnaround') }}
               </p>
             </div>
           </div>
@@ -21,10 +21,10 @@
           <div class="counter-item">
             <div class="text">
               <h3 class="use-text-title">
-                +500
+                🎯
               </h3>
               <p class="use-text-subtitle">
-                {{ $t('agencyLanding.about_projects') }}
+                {{ $t('agencyLanding.about_accuracy') }}
               </p>
             </div>
           </div>
@@ -33,10 +33,10 @@
           <div class="counter-item">
             <div class="text">
               <h3 class="use-text-title">
-                +300
+                😎
               </h3>
               <p class="use-text-subtitle">
-                {{ $t('agencyLanding.about_client') }}
+                {{ $t('agencyLanding.about_satisfaction') }}
               </p>
             </div>
           </div>
