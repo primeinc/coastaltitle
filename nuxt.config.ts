@@ -50,7 +50,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   components: false,
+
   css: [
     'aos/dist/aos.css',
     'vuetify/lib/styles/main.sass',
@@ -61,7 +63,10 @@ export default defineNuxtConfig({
     '@/assets/scss/vendors/animate-extends.css',
     '@/assets/scss/vendors/hamburger-menu.css',
   ],
-  modules: ['@nuxtjs/i18n'], // Removed 'vite-plugin-eslint' from modules
+
+  // Removed 'vite-plugin-eslint' from modules
+  modules: ['@nuxtjs/i18n'],
+
   i18n: {
     locales: languages,
     lazy: true,
@@ -75,6 +80,7 @@ export default defineNuxtConfig({
     },
     vueI18n: './config/i18n.js', // use this option for next vueI18n version
   },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -112,12 +118,16 @@ export default defineNuxtConfig({
     },
     // Optionally, you can adjust other Vite settings here
   },
+
   build: {
     transpile: ['vuetify'],
     // Removed the 'extend' property as it's not valid in Nuxt 3
   },
+
   server: {
     port: 8002,
     host: '0.0.0.0',
   },
+
+  compatibilityDate: '2024-09-20',
 });
