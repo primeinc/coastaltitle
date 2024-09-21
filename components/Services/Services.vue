@@ -108,40 +108,44 @@ export default {
       },
       servicesList: [
         {
-          title: 'Lorem Ipsum',
-          desc:
-            'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-          img: imgApi.agency[2],
+          title: 'Title Search',
+          desc: 'Conducting thorough title searches to verify property ownership, identify any existing liens, encumbrances, or title defects.',
+          img: imgApi.services.search,
         },
         {
-          title: 'Etiam rhoncus',
-          desc:
-            'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-          img: imgApi.agency[3],
+          title: 'Insurance Policies',
+          desc: 'Offering title insurance policies to protect homebuyers and lenders against potential financial losses due to title issues.',
+          img: imgApi.services.insurance,
         },
         {
-          title: 'Duis fermentum',
-          desc:
-            'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-          img: imgApi.agency[4],
+          title: 'Escrow Services',
+          desc: 'Facilitating escrow services to securely hold funds during the real estate transaction until all conditions are met.',
+          img: imgApi.services.escrow,
         },
         {
-          title: 'Lorem Ipsum',
-          desc:
-            'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-          img: imgApi.agency[2],
+          title: 'Title Clearance',
+          desc: 'Assisting in resolving title issues, such as clearing unpaid liens or resolving ownership disputes, to ensure a clean title.',
+          img: imgApi.services.clearance,
         },
         {
-          title: 'Etiam rhoncus',
-          desc:
-            'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-          img: imgApi.agency[3],
+          title: 'Document Recording',
+          desc: 'Submitting legal documents to the appropriate government offices for official recording and public recordation.',
+          img: imgApi.services.recording,
         },
         {
-          title: 'Duis fermentum',
-          desc:
-            'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-          img: imgApi.agency[4],
+          title: 'Property Reports',
+          desc: 'Providing detailed property reports, including chain of title, tax information, and other relevant property details.',
+          img: imgApi.services.property,
+        },
+        {
+          title: 'Mobile Closings',
+          desc: 'Offering mobile closing services for added convenience, allowing closings to take place at a location preferred by the parties involved.',
+          img: imgApi.services.closing,
+        },
+        {
+          title: 'Notary Services',
+          desc: 'Providing licensed notary services for the notarization of important legal documents related to the real estate transaction.',
+          img: imgApi.services.notary,
         },
       ],
     };

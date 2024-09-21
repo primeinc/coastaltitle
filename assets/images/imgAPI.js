@@ -29,7 +29,8 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   agency: [
-    'https://via.placeholder.com/964x723/1071ef/FFFFFF',
+    // 'https://via.placeholder.com/964x723/1071ef/FFFFFF',
+    'https://i.imgur.com/9bkPbAi.png',
     'https://via.placeholder.com/1280x825/99d8ff/FFFFFF',
     'https://via.placeholder.com/490x327/ffc999/FFFFFF',
     'https://via.placeholder.com/490x327/ffc999/FFFFFF',
@@ -40,6 +41,16 @@ const imgAPI = {
     'https://via.placeholder.com/713x309/79c0ff/FFFFFF',
     'https://via.placeholder.com/711x693/52596b/FFFFFF',
   ],
+  services: {
+    search: '/images/services/title-search.png',
+    insurance: '/images/services/title-insurance.png',
+    escrow: '/images/services/title-escrow.png',
+    closing: '/images/services/title-closing.png',
+    clearance: '/images/services/title-clearance.png',
+    recording: '/images/services/title-recording.png',
+    notary: '/images/services/title-notary.png',
+    property: '/images/services/title-property.png',
+  },
 };
 
 export default imgAPI;
