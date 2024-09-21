@@ -19,7 +19,6 @@
         <testimonials />
       </section>
       <section id="case-studies">
-        >>
         <case-studies />
       </section>
       <section id="call-to-action" class="space-top-short">
