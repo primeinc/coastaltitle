@@ -7,65 +7,35 @@
           <title-deco :text="$t('agencyLanding.office_title')" />
           <div class="block">
             <div
-              data-aos="fade-left"
-              data-aos-offset="450"
-              data-aos-delay="300"
+              v-for="(office, index) in offices"
+              :key="index"
+              :data-aos="'fade-left'"
+              :data-aos-offset="450"
+              :data-aos-delay="300 + index * 200"
               data-aos-duration="300"
             >
               <v-card class="paper">
                 <h6 class="text-h6">
-                  {{ $t('agencyLanding.office_head') }}
+                  {{ $t(office.name) }}
                 </h6>
                 <v-row>
                   <v-col cols="12" sm="6">
                     <v-icon class="icon">
                       mdi-phone
                     </v-icon>
-                    <span>+123 456 78 91</span>
+                    <span>{{ office.phone }}</span>
                   </v-col>
                   <v-col cols="12" sm="6">
                     <v-icon class="icon">
                       mdi-email
                     </v-icon>
-                    <span>hello@luxi.com</span>
+                    <span>{{ office.email }}</span>
                   </v-col>
                   <v-col cols="12" sm="12">
                     <v-icon class="icon">
                       mdi-map-marker
                     </v-icon>
-                    Lorem ipsum street no.14 Block A
-                  </v-col>
-                </v-row>
-              </v-card>
-            </div>
-            <div
-              data-aos="fade-left"
-              data-aos-offset="450"
-              data-aos-delay="500"
-              data-aos-duration="300"
-            >
-              <v-card class="paper">
-                <h6 class="text-h6">
-                  {{ $t('agencyLanding.office_branch') }}
-                </h6>
-                <v-row>
-                  <v-col cols="12" sm="6">
-                    <v-icon class="icon">
-                      mdi-phone
-                    </v-icon>
-                    <span>+98 765 432 10</span>
-                  </v-col>
-                  <v-col cols="12" sm="6">
-                    <v-icon class="icon">
-                      mdi-email
-                    </v-icon>
-                    <span>hello@luxi.com</span>
-                  </v-col>
-                  <v-col cols="12" sm="12">
-                    <v-icon class="icon">
-                      mdi-map-marker
-                    </v-icon>
-                    Lorem ipsum street Block C - Vestibullum Building
+                    {{ office.address }}
                   </v-col>
                 </v-row>
               </v-card>
@@ -116,10 +86,31 @@ export default {
       { lat: -31.56391, lng: 147.154312 },
       { lat: -33.718234, lng: 150.363181 },
     ];
+    const offices = [
+      {
+        name: 'Ft Lauderdale Office',
+        phone: '(954) 519-2477',
+        email: 'title@coastaltitlellc.com',
+        address: '333 Las Olas Way #314, Fort Lauderdale, FL 33301',
+      },
+      {
+        name: 'Tampa Office',
+        phone: '813-213-3410',
+        email: 'title@coastaltitlellc.com',
+        address: '550 N Reo St, Suite 300, Tampa, FL 33609',
+      },
+      {
+        name: 'Miami Office',
+        phone: '(305) 423-0091',
+        email: 'title@coastaltitlellc.com',
+        address: '350 S. Miami Ave., Suite A, Miami, FL 33130',
+      },
+    ];
 
     return {
       center,
       locations,
+      offices,
     };
   },
   computed: {
