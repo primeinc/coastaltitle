@@ -61,7 +61,7 @@ export default defineNuxtConfig({
     '@/assets/scss/vendors/animate-extends.css',
     '@/assets/scss/vendors/hamburger-menu.css',
   ],
-  modules: ['@nuxtjs/i18n', 'vite-plugin-eslint'],
+  modules: ['@nuxtjs/i18n'], // Removed 'vite-plugin-eslint' from modules
   i18n: {
     locales: languages,
     lazy: true,
@@ -105,16 +105,16 @@ export default defineNuxtConfig({
       }),
       vuetify(), // Added vite-plugin-vuetify
     ],
+    build: {
+      chunkSizeWarningLimit: 2000, // Increase from default 500KB to 2MB
+      // Optionally adjust log level to suppress warnings
+      logLevel: 'warn', // Options: 'info', 'warn', 'error', 'silent'
+    },
+    // Optionally, you can adjust other Vite settings here
   },
   build: {
     transpile: ['vuetify'],
-    extend(config: any) {
-      // Add type for config parameter
-      config.performance.hints = false;
-    },
-  },
-  devServer: {
-    port: 8002,
+    // Removed the 'extend' property as it's not valid in Nuxt 3
   },
   server: {
     port: 8002,
