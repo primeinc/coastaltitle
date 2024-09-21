@@ -124,7 +124,7 @@
 
 <script>
 import AOS from 'aos';
-import imgApi from '@/assets/images/imgAPI';
+import imgAPI from '@/assets/images/imgAPI'; // Import imgAPI
 import CaseCard from '../Cards/Case';
 
 export default {
@@ -147,7 +147,7 @@ export default {
       caseData: [
         {
           idx: 0,
-          bg: imgApi.agency[5],
+          bg: this.getRandomOfficeImage(), // Use random office image
           logo: '/images/logos/mobile.png',
           title: 'Modern Office Space',
           desc: 'Our state-of-the-art facilities',
@@ -155,6 +155,7 @@ export default {
         },
         {
           idx: 1,
+          bg: this.getRandomOfficeImage(), // Use random office image
           logo: '/images/logos/coin.png',
           title: 'Annual Company Picnic',
           desc: 'Team building and fun',
@@ -163,6 +164,7 @@ export default {
         },
         {
           idx: 2,
+          bg: this.getRandomOfficeImage(), // Use random office image
           logo: '/images/logos/starter.png',
           title: 'Meet Our Expert Team',
           desc: 'Dedicated professionals',
@@ -171,23 +173,15 @@ export default {
         },
         {
           idx: 3,
-          bg: imgApi.agency[6],
+          bg: this.getRandomOfficeImage(), // Use random office image
           logo: '/images/logos/profile.png',
           title: 'Coastal Property Closing',
           desc: 'Successful beachfront transaction',
           size: 'medium',
         },
         {
-          idx: 4,
-          bg: imgApi.agency[7],
-          logo: '/images/logos/architect.png',
-          title: 'Client Appreciation Event',
-          desc: 'Celebrating our partnerships',
-          size: 'medium',
-        },
-        {
           idx: 5,
-          bg: imgApi.agency[8],
+          bg: this.getRandomOfficeImage(), // Use random office image
           logo: '/images/logos/fashion.png',
           title: 'New Branch Opening',
           desc: 'Expanding our reach',
@@ -195,7 +189,7 @@ export default {
         },
         {
           idx: 6,
-          bg: imgApi.agency[9],
+          bg: this.getRandomOfficeImage(), // Use random office image
           logo: '/images/logos/cloud.png',
           title: 'Title Search Process',
           desc: 'Behind the scenes of our work',
@@ -240,6 +234,11 @@ export default {
     },
     handleHide() {
       this.visible = false;
+    },
+    getRandomOfficeImage() {
+      const images = imgAPI.office;
+      const randomIndex = Math.floor(Math.random() * images.length);
+      return images[randomIndex];
     },
   },
 };

@@ -51,6 +51,20 @@ const imgAPI = {
     notary: '/images/services/title-notary.png',
     property: '/images/services/title-property.png',
   },
+  office: [
+    '/images/media/office-oceanOrange-001.png',
+    '/images/media/office-oceanOrange-002.png',
+    '/images/media/office-oceanOrange-003.png',
+    '/images/media/office-oceanOrange-004.png',
+    '/images/media/office-oceanOrange-005.png',
+    '/images/media/office-oceanOrange-006.png',
+    '/images/media/office-oceanOrange-007.png',
+    '/images/media/office-oceanOrange-008.png',
+    '/images/media/office-oceanOrange-009.png',
+    '/images/media/office-oceanOrange-010.png',
+    '/images/media/office-oceanOrange-011.png',
+    '/images/media/office-oceanOrange-012.png',
+  ],
 };
 
 export default imgAPI;
