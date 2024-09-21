@@ -33,7 +33,7 @@
           <div class="counter-item">
             <div class="text">
               <h3 class="use-text-title">
-                😎
+                🏖️
               </h3>
               <p class="use-text-subtitle">
                 {{ $t('agencyLanding.about_satisfaction') }}
