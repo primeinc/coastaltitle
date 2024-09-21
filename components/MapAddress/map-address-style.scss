@@ -3,7 +3,7 @@
 }
 
 .block {
-  margin-top: $spacing5;
+  margin-top: 0 !important;
   @include breakpoints-up(md) {
     margin-top: $spacing20
   }

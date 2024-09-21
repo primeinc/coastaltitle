@@ -10,7 +10,7 @@
               v-for="(office, index) in offices"
               :key="index"
               :data-aos="'fade-left'"
-              :data-aos-offset="450"
+              :data-aos-offset="200"
               :data-aos-delay="300 + index * 200"
               data-aos-duration="300"
             >
@@ -45,7 +45,7 @@
         <v-col cols="12" md="6" class="pa-6">
           <v-card class="map">
             <GoogleMap
-              :zoom="5"
+              :zoom="7"
               :center="center"
               style="width: 100%; height: 100%"
             >
@@ -81,10 +81,11 @@ export default {
     Marker,
   },
   setup() {
-    const center = { lat: -33.718234, lng: 150.363181 };
+    const center = { lat: 27.9944024, lng: -81.7602544 }; // Centered around Florida
     const locations = [
-      { lat: -31.56391, lng: 147.154312 },
-      { lat: -33.718234, lng: 150.363181 },
+      { lat: 26.122439, lng: -80.137317 }, // Ft Lauderdale Office
+      { lat: 27.950575, lng: -82.457178 }, // Tampa Office
+      { lat: 25.761680, lng: -80.191790 }, // Miami Office
     ];
     const offices = [
       {
