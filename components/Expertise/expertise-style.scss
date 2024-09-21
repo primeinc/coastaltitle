@@ -124,7 +124,6 @@ $violet-buble: '/images/agency/violet_buble.png';
     }
   }
 }
-
 .tag-item {
   display: inline-block;
   border-radius: 4px;
@@ -136,10 +135,16 @@ $violet-buble: '/images/agency/violet_buble.png';
   @include margin-right($spacing1);
   margin-bottom: 17px;
   padding: $spacing1 * 0.5;
+
   @include breakpoints-up(md) {
-    padding: spacing(0.5, 4)
+    padding: spacing(0.5, 2);  // Reducing padding on larger screens
+  }
+
+  @include breakpoints-up(lg) {
+    padding: spacing(0.5, 1.5); // Further reducing padding for really big screens
   }
 }
+
 
 .tag-group {
   display: block;
