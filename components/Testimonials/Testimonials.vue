@@ -64,73 +64,32 @@ export default {
       loaded: false,
       testiContent: [
         {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[10],
-          name: 'John Doe',
-          title: 'Chief Digital Officer',
+          text: 'The team at Coastal Title Solutions has been a game changer for me. I needed a title company that could turn around commitments and closing packages with speed and accuracy, and they delivered.',
+          avatar: imgAPI.avatar[9],
+          name: 'Ken Pozek',
+          title: 'Keller Williams Realty',
           rating: 5,
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[1],
-          name: 'Jean Doe',
-          title: 'Chief Digital Officer',
-          rating: 4,
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+          text: 'For over 20 years, Coastal Title Solutions has consistently adapted to the market and delivered lightning-fast updates and closing packages. Their team always out-performs the competition.',
           avatar: imgAPI.avatar[2],
-          name: 'Jena Doe',
-          title: 'Graphic Designer',
-          rating: 4,
-        },
-        {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[3],
-          name: 'Jovelin Doe',
-          title: 'Senior Graphic Designer',
-          rating: 3,
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[4],
-          name: 'Jihan Doe',
-          title: 'CEO Software House',
+          name: 'Troy J. Fairbanks',
+          title: 'First Merchants Bank',
           rating: 5,
         },
         {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[6],
-          name: 'Jovelin Doe',
-          title: 'Senior Graphic Designer',
-          rating: 5,
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[7],
-          name: 'John Doe',
-          title: 'Senior Graphic Designer',
-          rating: 4,
-        },
-        {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[10],
-          name: 'John Doe',
-          title: 'Chief Digital Officer',
-          rating: 5,
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+          text: 'Coastal Title has provided first-class service for 12 years. They helped develop our processes and always saved the day when we needed it most. Partner with them today!',
           avatar: imgAPI.avatar[1],
-          name: 'Jean Doe',
-          title: 'Chief Digital Officer',
-          rating: 4,
+          name: 'Jeffrey M. Levine',
+          title: 'Senior VP, Level One Bank',
+          rating: 5,
+        },
+        {
+          text: 'Coastal Title consistently delivers the professionalism and accountability I expect. They make my life easier with their wide coverage and exceptional service.',
+          avatar: imgAPI.avatar[8],
+          name: 'Rick Richter',
+          title: 'EVP, Cross Country Mortgage',
+          rating: 5,
         },
       ],
       slickOptions: {
