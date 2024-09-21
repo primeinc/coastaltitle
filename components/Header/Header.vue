@@ -1,12 +1,4 @@
 <template>
-  <v-navigation-drawer
-    v-if="isMobile"
-    v-model="openDrawer"
-    temporary
-    class="mobile-nav"
-  >
-    <mobile-menu :open="openDrawer" />
-  </v-navigation-drawer>
   <v-app-bar
     id="header"
     v-scroll="handleScroll"
@@ -20,18 +12,6 @@
           :class="{ invert: invert }"
           class="nav-logo"
         >
-          <v-btn
-            v-if="isMobile"
-            :class="{ 'is-active': openDrawer }"
-            class="hamburger hamburger--spin mobile-menu"
-            text
-            icon
-            @click.stop="handleToggleOpen"
-          >
-            <span class="hamburger-box">
-              <span class="bar hamburger-inner" />
-            </span>
-          </v-btn>
           <div class="logo">
             <nuxt-link
               v-if="invert"
@@ -118,7 +98,7 @@ import brand from '@/assets/text/brand';
 import { useRouter } from '#app';
 import navMenu from './menu';
 import Settings from './Settings';
-import MobileMenu from './MobileMenu';
+// import MobileMenu from './MobileMenu';
 import { useLocalePath } from '#imports';
 
 let counter = 0;
@@ -135,7 +115,7 @@ function createData(name, url, offset) {
 export default {
   components: {
     'setting-menu': Settings,
-    MobileMenu,
+    // MobileMenu,
   },
   props: {
     invert: {
