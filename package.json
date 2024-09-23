@@ -22,6 +22,9 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "@nuxt/image": "^1.8.0",
+    "@nuxtjs/robots": "^4.1.7",
+    "@nuxtjs/sitemap": "^6.1.0",
     "@splidejs/vue-splide": "^0.6.12",
     "rtl-sass": "^1.5.0",
     "vite-plugin-vuetify": "^1.0.2",
@@ -37,6 +40,7 @@
   },
   "devDependencies": {
     "@darkobits/vite-plugin-favicons": "^0.3.2",
+    "@nuxt/devtools": "^1.5.1",
     "@nuxtjs/i18n": "^8.5.4",
     "@vue/eslint-config-airbnb": "^6.0.0",
     "animate.css": "^3.7.2",
