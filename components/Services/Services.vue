@@ -33,8 +33,8 @@
       <v-container class="fixed-width">
         <div class="title">
           <title-icon
-            :text="$t('agencyLanding.services_title')"
-            icon="apps"
+            text=" "
+            icon=" "
             extended
           />
           <nav class="arrow">
