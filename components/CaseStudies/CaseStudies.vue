@@ -144,45 +144,44 @@ export default {
       caseData: [
         {
           idx: 0,
-          bg: this.getRandomSmallImage(), // Use getRandomSmallImage for small size
-          logo: '/images/logos/mobile.png',
+          bg: imgAPI.office[0],
           title: 'Modern Office Space',
           desc: 'Our state-of-the-art facilities',
           size: 'small',
+          simple: false,
         },
         {
           idx: 1,
-          bg: this.getRandomSmallImage(), // Use getRandomSmallImage for small size
-          logo: '/images/logos/coin.png',
+          bg: imgAPI.office[2],
+          title: 'Continuing Education Classes',
           size: 'small',
+          simple: false,
         },
         {
           idx: 2,
-          bg: this.getRandomOfficeImage(), // Use existing method for medium size
-          logo: '/images/logos/starter.png',
+          bg: imgAPI.office[4],
           title: 'Lunch & Learn',
           desc: 'Dedicated professionals',
           size: 'medium',
+          simple: false,
         },
         {
           idx: 3,
-          bg: this.getRandomOfficeImage(), // Use existing method for medium size
-          logo: '/images/logos/profile.png',
+          bg: imgAPI.office[6],
           title: 'Coastal Property Closing',
+          desc: ' ',
+          size: 'small',
+        },
+        {
+          idx: 5,
+          bg: imgAPI.office[9],
+          title: 'Expanding our reach',
           desc: 'Successful beachfront transaction',
           size: 'medium',
         },
         {
-          idx: 5,
-          bg: this.getRandomBigImage(), // Use getRandomBigImage for big size
-          title: 'Expanding our reach',
-          desc: '',
-          size: 'medium',
-        },
-        {
           idx: 6,
-          bg: this.getRandomBigImage(), // Use getRandomBigImage for big size
-          logo: '/images/logos/cloud.png',
+          bg: imgAPI.office[11],
           size: 'big',
         },
       ],

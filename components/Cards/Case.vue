@@ -15,15 +15,6 @@
       class="property"
     >
       <span class="title">
-        <span
-          v-if="!simple"
-          class="logo"
-        >
-          <img
-            :src="logo"
-            alt="logo"
-          >
-        </span>
         <span class="title">
           {{ title }}
         </span>
