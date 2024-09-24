@@ -188,14 +188,9 @@ export default {
           'Title Estimator ',
         ],
         link: [
-          '#resource',
-          '#resource',
+          'https://titlesolutionsllc.titlecapture.com/seller-net-sheet',
+          'https://titlesolutionsllc.titlecapture.com/title-quote',
         ],
-      },
-      {
-        title: 'Legal',
-        description: ['Privacy policy', 'Terms of use'],
-        link: ['#privacy-policy', '#terms-of-use'],
       },
     ],
   }),

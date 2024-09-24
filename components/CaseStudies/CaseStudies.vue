@@ -140,9 +140,6 @@ export default {
       value: 'office',
       categories: [
         'office',
-        'events',
-        'team',
-        'projects',
       ],
       caseData: [
         {
@@ -157,15 +154,13 @@ export default {
           idx: 1,
           bg: this.getRandomSmallImage(), // Use getRandomSmallImage for small size
           logo: '/images/logos/coin.png',
-          title: 'Annual Company Picnic',
-          desc: 'Team building and fun',
           size: 'small',
         },
         {
           idx: 2,
           bg: this.getRandomOfficeImage(), // Use existing method for medium size
           logo: '/images/logos/starter.png',
-          title: 'Meet Our Expert Team',
+          title: 'Lunch & Learn',
           desc: 'Dedicated professionals',
           size: 'medium',
         },
@@ -188,8 +183,6 @@ export default {
           idx: 6,
           bg: this.getRandomBigImage(), // Use getRandomBigImage for big size
           logo: '/images/logos/cloud.png',
-          title: 'Title Search Process',
-          desc: 'Behind the scenes of our work',
           size: 'big',
         },
       ],
