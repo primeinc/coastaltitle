@@ -155,7 +155,6 @@ export default {
       openDrawer: null,
       menuList: [
         createData(navMenu[0], '#' + navMenu[0]),
-        createData(navMenu[3], '#' + navMenu[2], -40),
       ],
     };
   },

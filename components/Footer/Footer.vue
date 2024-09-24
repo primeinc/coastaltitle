@@ -109,16 +109,6 @@
             <span class="ion-logo-linkedin icon" />
           </v-btn>
         </div>
-        <v-select
-          v-model="lang"
-          :items="langList"
-          :value="curLang"
-          variant="outlined"
-          class="select-lang"
-          color="primary"
-          prepend-inner-icon="mdi-web"
-          @update:model-value="switchLang(lang)"
-        />
       </v-col>
     </v-row>
     <p v-if="isMobile" class="body-2 text-center">
