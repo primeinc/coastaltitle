@@ -20,7 +20,8 @@
     "accept": "Aceptar",
     "en": "Inglés",
     "es": "Español",
-    "notif_msg": "Este es un ejemplo de un mensaje que se usa comúnmente para información importante para visitantes o usuarios. Por favor, haz clic en el botón de al lado para cerrar este mensaje."
+    "notif_msg": "Este es un ejemplo de un mensaje que se usa comúnmente para información importante para visitantes o usuarios. Por favor, haz clic en el botón de al lado para cerrar este mensaje.",
+    "language_toggle": "English"
   },
   "agencyLanding": {
     "header_about": "acerca de",

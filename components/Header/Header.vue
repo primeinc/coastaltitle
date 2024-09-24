@@ -77,9 +77,9 @@
                   v-text="$t('agencyLanding.header_contact')"
                 />
               </li>
+              <setting-menu :invert="invert" />
             </ul>
           </div>
-          <setting-menu :invert="invert" />
         </nav>
       </div>
     </v-container>
