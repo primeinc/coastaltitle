@@ -77,5 +77,130 @@
       "team": "Team",
       "projects": "Projects"
     }
+  },
+  "expertiseList": [
+    {
+      "category": "Title Insurance Solutions",
+      "services": [
+        "Risk Mitigation",
+        "Compliance Expertise"
+      ]
+    },
+    {
+      "category": "Escrow & Closing Services",
+      "services": [
+        "Transaction Management",
+        "Secure Disbursements"
+      ]
+    },
+    {
+      "category": "Underwriting Services",
+      "services": [
+        "Title Searches",
+        "Clearance Expertise"
+      ]
+    },
+    {
+      "category": "Market-Specific Expertise",
+      "services": [
+        "Local Regulations",
+        "Community Partnerships"
+      ]
+    },
+    {
+      "category": "Client Retention Strategies",
+      "services": [
+        "Long-Term Client Relations",
+        "Post-Closing Support"
+      ]
+    },
+    {
+      "category": "Document Recording",
+      "services": [
+        "Title Curative Services",
+        "Lender Support"
+      ]
+    },
+    {
+      "category": "Foreclosure Services",
+      "services": [
+        "Digital Closing Solutions",
+        "Title Insurance Policy Review"
+      ]
+    },
+    {
+      "category": "Construction Loan Services",
+      "services": [
+        "Zoning and Land Use Analysis",
+        "Lien Searches"
+      ]
+    },
+    {
+      "category": "Real Estate Settlement Solutions",
+      "services": [
+        "Investor Services",
+        "Trust and Estate Title Transfers"
+      ]
+    }
+  ],
+  "caseData": {
+    "0": {
+      "title": "Modern Office Space",
+      "description": "Our state-of-the-art facilities"
+    },
+    "1": {
+      "title": "Continuing Education Classes",
+      "description": " "
+    },
+    "2": {
+      "title": "Lunch & Learn",
+      "description": "Dedicated professionals"
+    },
+    "3": {
+      "title": "Coastal Property Closing",
+      "description": " "
+    },
+    "5": {
+      "title": "Expanding our reach",
+      "description": "One Wave at a Time"
+    },
+    "6": {
+      "title": " ",
+      "description": " "
+    }
+  },
+  "servicesList": {
+    "0": {
+      "title": "Title Search",
+      "description": "Conducting thorough title searches to verify property ownership, identify any existing liens, encumbrances, or title defects."
+    },
+    "1": {
+      "title": "Insurance Policies",
+      "description": "Offering title insurance policies to protect homebuyers and lenders against potential financial losses due to title issues."
+    },
+    "2": {
+      "title": "Escrow Services",
+      "description": "Facilitating escrow services to securely hold funds during the real estate transaction until all conditions are met."
+    },
+    "3": {
+      "title": "Title Clearance",
+      "description": "Assisting in resolving title issues, such as clearing unpaid liens or resolving ownership disputes, to ensure a clean title."
+    },
+    "4": {
+      "title": "Document Recording",
+      "description": "Submitting legal documents to the appropriate government offices for official recording and public recordation."
+    },
+    "5": {
+      "title": "Property Reports",
+      "description": "Providing detailed property reports, including chain of title, tax information, and other relevant property details."
+    },
+    "6": {
+      "title": "Mobile Closings",
+      "description": "Offering mobile closing services for added convenience, allowing closings to take place at a location preferred by the parties involved."
+    },
+    "7": {
+      "title": "Notary Services",
+      "description": "Providing licensed notary services for the notarization of important legal documents related to the real estate transaction."
+    }
   }
 }

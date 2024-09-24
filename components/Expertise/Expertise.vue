@@ -148,15 +148,51 @@ export default {
         },
       },
       expertiseList: [
-        ['Title Insurance Solutions', 'Risk Mitigation', 'Compliance Expertise'],
-        ['Escrow & Closing Services', 'Transaction Management', 'Secure Disbursements'],
-        ['Underwriting Services', 'Title Searches', 'Clearance Expertise'],
-        ['Market-Specific Expertise', 'Local Regulations', 'Community Partnerships'],
-        ['Client Retention Strategies', 'Long-Term Client Relations', 'Post-Closing Support'],
-        ['Document Recording', 'Title Curative Services', 'Lender Support'],
-        ['Foreclosure Services', 'Digital Closing Solutions', 'Title Insurance Policy Review'],
-        ['Construction Loan Services', 'Zoning and Land Use Analysis', 'Lien Searches'],
-        ['Real Estate Settlement Solutions', 'Investor Services', 'Trust and Estate Title Transfers'],
+        [
+          this.$t('expertiseList.0.category'),
+          this.$t('expertiseList.0.services.0'),
+          this.$t('expertiseList.0.services.1'),
+        ],
+        [
+          this.$t('expertiseList.1.category'),
+          this.$t('expertiseList.1.services.0'),
+          this.$t('expertiseList.1.services.1'),
+        ],
+        [
+          this.$t('expertiseList.2.category'),
+          this.$t('expertiseList.2.services.0'),
+          this.$t('expertiseList.2.services.1'),
+        ],
+        [
+          this.$t('expertiseList.3.category'),
+          this.$t('expertiseList.3.services.0'),
+          this.$t('expertiseList.3.services.1'),
+        ],
+        [
+          this.$t('expertiseList.4.category'),
+          this.$t('expertiseList.4.services.0'),
+          this.$t('expertiseList.4.services.1'),
+        ],
+        [
+          this.$t('expertiseList.5.category'),
+          this.$t('expertiseList.5.services.0'),
+          this.$t('expertiseList.5.services.1'),
+        ],
+        [
+          this.$t('expertiseList.6.category'),
+          this.$t('expertiseList.6.services.0'),
+          this.$t('expertiseList.6.services.1'),
+        ],
+        [
+          this.$t('expertiseList.7.category'),
+          this.$t('expertiseList.7.services.0'),
+          this.$t('expertiseList.7.services.1'),
+        ],
+        [
+          this.$t('expertiseList.8.category'),
+          this.$t('expertiseList.8.services.0'),
+          this.$t('expertiseList.8.services.1'),
+        ],
       ],
 
     };

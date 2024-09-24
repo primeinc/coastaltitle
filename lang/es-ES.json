@@ -14,8 +14,8 @@
     "form_phone": "¿Cuál es tu número de teléfono?",
     "form_company": "¿Cuál es tu empresa?",
     "form_message": "Escribe tu mensaje aquí",
-    "form_terms": "He leído y acepto los Términos de",
-    "form_privacy": "Política de Servicio y Privacidad *",
+    "form_terms": "He leído y acepto los",
+    "form_privacy": "Términos de Servicio y Política de Privacidad *",
     "form_send": "Enviar Mensaje",
     "accept": "Aceptar",
     "en": "Inglés",
@@ -26,11 +26,11 @@
   "agencyLanding": {
     "header_about": "acerca de",
     "header_services": "servicios",
-    "header_our-expertise": "área de servicio",
+    "header_our-expertise": "nuestra experiencia",
     "header_testimonials": "testimonios",
-    "header_case-studies": "medios",
+    "header_case-studies": "casos de éxito",
     "header_our_office": "nuestra oficina",
-    "header_contact": "contacto",
+    "header_contact": "contáctanos",
     "header_language": "idioma",
     "header_theme": "modo de tema",
     "header_dark": "oscuro",
@@ -70,12 +70,137 @@
   },
   "mediaLanding": {
     "media_title": "Galería de Medios",
-    "media_subtitle": "Explora nuestra galería de medios que muestra nuestro trabajo y eventos.",
+    "media_subtitle": "Explora nuestra galería de medios que muestra nuestro trabajo y nuestros eventos.",
     "media_categories": {
       "office": "Oficina",
       "events": "Eventos",
       "team": "Equipo",
       "projects": "Proyectos"
+    }
+  },
+  "expertiseList": [
+    {
+      "category": "Seguro de Título",
+      "services": [
+        "Mitigación de Riesgos",
+        "Expertos en Cumplimiento"
+      ]
+    },
+    {
+      "category": "Fideicomiso y Cierre",
+      "services": [
+        "Manejo de Transacciones",
+        "Desembolsos Seguros"
+      ]
+    },
+    {
+      "category": "Underwriting",
+      "services": [
+        "Búsquedas de Títulos",
+        "Experiencia en Saneamiento de Títulos"
+      ]
+    },
+    {
+      "category": "Experiencia Local",
+      "services": [
+        "Regulaciones Locales",
+        "Alianzas Comunitarias"
+      ]
+    },
+    {
+      "category": "Retención de Clientes",
+      "services": [
+        "Relaciones Duraderas con Clientes",
+        "Soporte Post-Cierre"
+      ]
+    },
+    {
+      "category": "Registro de Documentos",
+      "services": [
+        "Servicios de Saneamiento de Títulos",
+        "Apoyo al Prestamista"
+      ]
+    },
+    {
+      "category": "Ejecución Hipotecaria",
+      "services": [
+        "Cierres Digitales",
+        "Revisión de Pólizas de Título"
+      ]
+    },
+    {
+      "category": "Préstamos de Construcción",
+      "services": [
+        "Análisis de Zonificación",
+        "Búsquedas de Gravámenes"
+      ]
+    },
+    {
+      "category": "Cierre Inmobiliario",
+      "services": [
+        "Servicios a Inversionistas",
+        "Transferencias de Títulos en Fideicomisos y Herencias"
+      ]
+    }
+  ],
+  "caseData": {
+    "0": {
+      "title": "Oficina Moderna",
+      "description": "Nuestras instalaciones de última generación"
+    },
+    "1": {
+      "title": "Clases de Educación Continua",
+      "description": " "
+    },
+    "2": {
+      "title": "Almuerzo y Aprendizaje",
+      "description": "Profesionales dedicados"
+    },
+    "3": {
+      "title": "Cierre de Propiedad Costera",
+      "description": " "
+    },
+    "5": {
+      "title": "Expandiendo Nuestro Alcance",
+      "description": "Una Ola a la Vez"
+    },
+    "6": {
+      "title": " ",
+      "description": " "
+    }
+  },
+  "servicesList": {
+    "0": {
+      "title": "Búsqueda de Títulos",
+      "description": "Realizando búsquedas de títulos exhaustivas para verificar la propiedad de la propiedad, identificar cualquier gravamen existente, cargas o defectos de título."
+    },
+    "1": {
+      "title": "Pólizas de Seguro",
+      "description": "Ofreciendo pólizas de seguro de título para proteger a los compradores de viviendas y prestamistas contra posibles pérdidas financieras debido a problemas de título."
+    },
+    "2": {
+      "title": "Servicios de Custodia",
+      "description": "Facilitando servicios de custodia para mantener fondos de forma segura durante la transacción inmobiliaria hasta que se cumplan todas las condiciones."
+    },
+    "3": {
+      "title": "Limpieza de Títulos",
+      "description": "Asistiendo en la resolución de problemas de título, como eliminar gravámenes impagados o resolver disputas de propiedad, para asegurar un título limpio."
+    },
+    "4": {
+      "title": "Registro de Documentos",
+      "description": "Presentando documentos legales a las oficinas gubernamentales apropiadas para el registro oficial y la inscripción pública."
+    },
+    "5": {
+      "title": "Informes de Propiedades",
+      "description": "Proporcionando informes detallados de propiedades, incluyendo cadena de título, información tributaria y otros detalles relevantes de la propiedad."
+    },
+    "6": {
+      "title": "Cierres Móviles",
+      "description": "Ofreciendo servicios de cierre móvil para mayor comodidad, permitiendo que los cierres se realicen en una ubicación preferida por las partes involucradas."
+    },
+    "7": {
+      "title": "Servicios de Notaría",
+      "description": "Proporcionando servicios de notario autorizado para la notarización de documentos legales importantes relacionados con la transacción inmobiliaria."
     }
   }
 }
