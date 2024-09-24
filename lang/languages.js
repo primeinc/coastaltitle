@@ -1,16 +1,16 @@
 export default [
   {
     code: 'en',
-    iso: 'eng-US',
-    name: 'English',
+    iso: 'en',
     file: 'en-US.json',
-    dir: 'ltr'
+    dir: 'ltr',
+    name: 'English'
   },
   {
     code: 'es',
-    iso: 'es-ES',
-    name: 'Español',
+    iso: 'es',
     file: 'es-ES.json',
-    dir: 'ltr'
+    dir: 'ltr',
+    name: 'Español'
   }
 ]

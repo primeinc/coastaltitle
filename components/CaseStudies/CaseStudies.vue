@@ -52,10 +52,10 @@
                     >
                       <case-card
                         :bg="item.bg || ''"
-                        :logo="item.logo"
-                        :title="item.title"
-                        :desc="item.desc"
-                        :size="item.size"
+                        :logo="item.logo || ''"
+                        :title="item.title || ''"
+                        :desc="item.desc || ''"
+                        :size="item.size || ''"
                         :simple="item.simple || false"
                         :show-img="() => showImg(item.idx)"
                       />
@@ -75,10 +75,10 @@
                     >
                       <case-card
                         :bg="item.bg || ''"
-                        :logo="item.logo"
-                        :title="item.title"
-                        :desc="item.desc"
-                        :size="item.size"
+                        :logo="item.logo || ''"
+                        :title="item.title || ''"
+                        :desc="item.desc || ''"
+                        :size="item.size || ''"
                         :simple="item.simple || false"
                         :show-img="() => showImg(item.idx)"
                       />
@@ -98,10 +98,10 @@
                     >
                       <case-card
                         :bg="item.bg || ''"
-                        :logo="item.logo"
-                        :title="item.title"
-                        :desc="item.desc"
-                        :size="item.size"
+                        :logo="item.logo || ''"
+                        :title="item.title || ''"
+                        :desc="item.desc || ''"
+                        :size="item.size || ''"
                         :simple="item.simple || false"
                         :show-img="() => showImg(item.idx)"
                       />

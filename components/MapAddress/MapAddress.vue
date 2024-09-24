@@ -16,7 +16,7 @@
             >
               <v-card class="paper">
                 <h6 class="text-h6">
-                  {{ $t(office.name) }}
+                  {{ office.name }}
                 </h6>
                 <v-row>
                   <v-col cols="12" sm="6">
