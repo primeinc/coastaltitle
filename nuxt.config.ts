@@ -48,6 +48,13 @@ export default defineNuxtConfig({
           href: 'https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css',
         },
       ],
+      script: [
+        {
+          src: `https://maps.googleapis.com/maps/api/js?key=AIzaSyBPn1ULU2cmbKyxwc0aKfiT1KGsdF1keGg`,
+          async: true,
+          defer: true,
+        },
+      ],
     },
   },
 
@@ -122,6 +129,12 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
     // Removed the 'extend' property as it's not valid in Nuxt 3
+  },
+
+  runtimeConfig: {
+    public: {
+      googleMapsApiKey: 'AIzaSyBPn1ULU2cmbKyxwc0aKfiT1KGsdF1keGg',
+    },
   },
 
   server: {

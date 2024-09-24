@@ -51,6 +51,7 @@
         <v-col cols="12" md="6" class="pa-6">
           <v-card class="map">
             <GoogleMap
+              :api-key="googleMapsApiKey"
               :zoom="7"
               :center="center"
               style="width: 100%; height: 100%"
@@ -77,6 +78,7 @@
 <script>
 import AOS from 'aos';
 import { GoogleMap, Marker, MarkerCluster } from 'vue3-google-map';
+import { useRuntimeConfig } from '#app';
 import TitleDeco from '../Title/WithDecoration';
 
 export default {
@@ -87,6 +89,11 @@ export default {
     Marker,
   },
   setup() {
+    const config = useRuntimeConfig();
+    const { googleMapsApiKey } = config.public;
+
+    console.log('Google Maps API Key:', googleMapsApiKey); // Add this line
+
     const center = { lat: 27.9944024, lng: -81.7602544 }; // Centered around Florida
     const locations = [
       { lat: 26.122439, lng: -80.137317 }, // Ft Lauderdale Office
@@ -124,6 +131,7 @@ export default {
     };
 
     return {
+      googleMapsApiKey,
       center,
       locations,
       offices,
