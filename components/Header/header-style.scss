@@ -151,34 +151,34 @@ $flag: '/images/flag-logo.png';
   }
 }
 
-.v-application .v-application--wrap .logo {
-  a {
-    @include breakpoints-down('sm') {
-      color: $palette-common-white
-    }
-  }
-}
+// .v-application .v-application--wrap .logo {
+//   a {
+//     @include breakpoints-down('sm') {
+//       color: $palette-common-white
+//     }
+//   }
+// }
 
-.logo {
-  a {
-    text-decoration: none;
-    display: flex;
-    font-size: 22px;
-    align-items: center;
-    font-weight: 500;
-    color: $palette-common-white;
-    @include breakpoints-up('md') {
-      @include palette-text-primary;
-    }
-  }
-  img {
-    transition: all 0.3s ease;
-    max-width: 48px;
-    height: 48px;
-    width: 48px;
-    @include margin-right($spacing1);
-  }
-}
+// .logo {
+//   a {
+//     text-decoration: none;
+//     display: flex;
+//     font-size: 22px;
+//     align-items: center;
+//     font-weight: 500;
+//     color: $palette-common-white;
+//     @include breakpoints-up('md') {
+//       @include palette-text-primary;
+//     }
+//   }
+//   // img {
+//   //   transition: all 0.3s ease;
+//   //   max-width: 48px;
+//   //   height: 48px;
+//   //   width: 48px;
+//   //   @include margin-right($spacing1);
+//   // }
+// }
 
 .nav-logo {
   &.invert {
