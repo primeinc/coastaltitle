@@ -160,7 +160,6 @@ export default {
           title: 'Annual Company Picnic',
           desc: 'Team building and fun',
           size: 'small',
-          simple: true,
         },
         {
           idx: 2,
@@ -169,7 +168,6 @@ export default {
           title: 'Meet Our Expert Team',
           desc: 'Dedicated professionals',
           size: 'medium',
-          simple: true,
         },
         {
           idx: 3,
@@ -182,10 +180,9 @@ export default {
         {
           idx: 5,
           bg: this.getRandomBigImage(), // Use getRandomBigImage for big size
-          logo: '/images/logos/fashion.png',
-          title: 'New Branch Opening',
-          desc: 'Expanding our reach',
-          size: 'big',
+          title: 'Expanding our reach',
+          desc: '',
+          size: 'medium',
         },
         {
           idx: 6,
