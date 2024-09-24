@@ -92,8 +92,6 @@ export default {
     const config = useRuntimeConfig();
     const { googleMapsApiKey } = config.public;
 
-    console.log('Google Maps API Key:', googleMapsApiKey); // Add this line
-
     const center = { lat: 27.9944024, lng: -81.7602544 }; // Centered around Florida
     const locations = [
       { lat: 26.122439, lng: -80.137317 }, // Ft Lauderdale Office
